@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="White"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileProject.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image Source="logo.png" HeightRequest="200" WidthRequest="200"/>
+
+            <Label 
+            Text="Login"
+            SemanticProperties.HeadingLevel="Level1"
+            FontSize="30"
+            HorizontalOptions="Center" 
+            VerticalOptions="Center"/>
+
+            <StackLayout Orientation="Horizontal">
+
+                <Frame Margin="20,0,0,0" Padding="0" HasShadow="True" BorderColor="White" HorizontalOptions="FillAndExpand">
+                    <Entry x:Name="entry_username" VerticalOptions="Center" Placeholder="username" PlaceholderColor="Black"/>
+                </Frame>
+
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                
+                <Frame Margin="20,0,0,0" Padding="0" HasShadow="True" BorderColor="White" HorizontalOptions="FillAndExpand">
+                    <Entry x:Name="entry_password" Placeholder="password" PlaceholderColor="Black"/>
+                </Frame>
+
+            </StackLayout>
+
+            <Button
+                x:Name="Login"
+                Text="Login"
+                TextColor="Black"
+                HorizontalOptions="Center" 
+                BackgroundColor="#FFE033"
+                WidthRequest="200"
+                Clicked="Login_Clicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
