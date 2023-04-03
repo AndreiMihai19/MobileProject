@@ -23,7 +23,7 @@
             <StackLayout Orientation="Horizontal">
 
                 <Frame Margin="20,0,0,0" Padding="0" HasShadow="True" BorderColor="White" HorizontalOptions="FillAndExpand">
-                    <Entry x:Name="entry_username" VerticalOptions="Center" Placeholder="username" PlaceholderColor="Black"/>
+                    <Entry x:Name="entry_username" VerticalOptions="Center" Placeholder="username"/>
                 </Frame>
 
             </StackLayout>
@@ -31,7 +31,7 @@
             <StackLayout Orientation="Horizontal">
                 
                 <Frame Margin="20,0,0,0" Padding="0" HasShadow="True" BorderColor="White" HorizontalOptions="FillAndExpand">
-                    <Entry x:Name="entry_password" Placeholder="password" PlaceholderColor="Black"/>
+                    <Entry x:Name="entry_password" Placeholder="password" IsPassword="True" />
                 </Frame>
 
             </StackLayout>

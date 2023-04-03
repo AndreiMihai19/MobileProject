@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="White"
+             x:Class="MobileProject.MenuPage"
+             Title="MenuPage">
+    <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0">
+
+        <StackLayout Orientation="Horizontal" BackgroundColor="Black">
+
+            <Frame Margin="20,0,0,0" BackgroundColor="Black" Padding="0" HasShadow="True"  BorderColor="Black" HorizontalOptions="FillAndExpand">
+            </Frame>
+
+        </StackLayout>
+
+        <Label 
+            Text="Menu Page"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        
+
+        <Button
+                x:Name="Back"
+                Text="Back"
+                TextColor="Black"
+                HorizontalOptions="Center"
+                VerticalOptions="End"
+                BackgroundColor="#FFE033"
+                WidthRequest="200"
+                Clicked="Back_Button" />
+    </VerticalStackLayout>
+</ContentPage>
