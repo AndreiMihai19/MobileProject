@@ -2,35 +2,94 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              Shell.NavBarIsVisible="False"
-             BackgroundColor="White"
+             BackgroundColor="Black"
              x:Class="MobileProject.MenuPage"
              Title="MenuPage">
     <VerticalStackLayout
             Spacing="25"
             Padding="30,0">
 
-        <StackLayout Orientation="Horizontal" BackgroundColor="Black">
+        <StackLayout  Orientation="Horizontal" BackgroundColor="#FFE033" WidthRequest="400" HeightRequest="90">
 
-            <Frame Margin="20,0,0,0" BackgroundColor="Black" Padding="0" HasShadow="True"  BorderColor="Black" HorizontalOptions="FillAndExpand">
-            </Frame>
+            <Label      
+            Text="User Name"
+            FontSize="Small"
+            FontAttributes="Bold"
+            VerticalOptions="Start" 
+            Padding="15,15,0,0"   
+             />
+
+
+            <Label
+            x:Name="username_show"
+            Text="User Name"
+            FontAttributes="Bold"
+            FontSize="Small"
+            HorizontalOptions="Start"
+            VerticalOptions="End" 
+            Padding="-74,0,0,20"   
+             />
+
+            <Label
+            Text="Current Local Time"
+            FontAttributes="Bold"
+            FontSize="Small"
+            HorizontalOptions="Center"
+            VerticalOptions="Start" 
+            Padding="50,15,0,0"   
+                
+             />
+
+            <Label
+            x:Name="currentlocaltime_show"
+            Text="Current Local Time"
+            FontAttributes="Bold"
+            FontSize="Small"
+            HorizontalOptions="Center"
+            VerticalOptions="End" 
+            Padding="-125,0,0,20"   
+                
+             />
+            
+            <Label
+            x:Name="doorstatus_show"
+            Text="Door Status"
+            FontAttributes="Bold"
+            FontSize="Small"
+            HorizontalOptions="End"
+            VerticalOptions="Start" 
+            Padding="35,15,0,0"   
+             />
+
+            <Label
+            Text="Door Status"
+            FontAttributes="Bold"
+            FontSize="Small"
+            HorizontalOptions="End"
+            VerticalOptions="End" 
+            Padding="-78,0,0,20"   
+             />
 
         </StackLayout>
 
-        <Label 
-            Text="Menu Page"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        <StackLayout  Orientation="Horizontal" BackgroundColor="#FFE033" WidthRequest="400" HeightRequest="690">
 
-        
-
-        <Button
-                x:Name="Back"
+                <Button 
+                x:Name="back_button"
                 Text="Back"
-                TextColor="Black"
-                HorizontalOptions="Center"
+                FontAttributes="Bold"
+                FontSize="Medium"
+                TextColor="White"
                 VerticalOptions="End"
-                BackgroundColor="#FFE033"
+                BackgroundColor="Black"
                 WidthRequest="200"
-                Clicked="Back_Button" />
+                Clicked="Back_Button" 
+                TranslationX="100"
+                TranslationY="-20"
+                />
+
+        </StackLayout>
+
+       
     </VerticalStackLayout>
 </ContentPage>
