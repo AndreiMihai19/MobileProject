@@ -19,11 +19,12 @@
             FontSize="30"
             HorizontalOptions="Center" 
             VerticalOptions="Center"/>
+            
 
             <StackLayout Orientation="Horizontal">
 
                 <Frame Margin="20,0,0,0" Padding="0" HasShadow="True" BorderColor="White" HorizontalOptions="FillAndExpand">
-                    <Entry x:Name="entry_username" VerticalOptions="Center" Placeholder="username"/>
+                    <Entry x:Name="entry_username" VerticalOptions="Center" Placeholder="username" TextColor="#000000" />
                 </Frame>
 
             </StackLayout>
@@ -31,7 +32,7 @@
             <StackLayout Orientation="Horizontal">
                 
                 <Frame Margin="20,0,0,0" Padding="0" HasShadow="True" BorderColor="White" HorizontalOptions="FillAndExpand">
-                    <Entry x:Name="entry_password" Placeholder="password" IsPassword="True" />
+                    <Entry x:Name="entry_password" Placeholder="password" IsPassword="True" TextColor="#000000"/>
                 </Frame>
 
             </StackLayout>
