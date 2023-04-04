@@ -30,11 +30,11 @@
             </StackLayout>
 
             <StackLayout Orientation="Horizontal">
-                
+
                 <Frame Margin="20,0,0,0" Padding="0" HasShadow="True" BorderColor="White" HorizontalOptions="FillAndExpand">
                     <Entry x:Name="entry_password" Placeholder="password" IsPassword="True" TextColor="#000000"/>
                 </Frame>
-
+                <?comentariu?>
             </StackLayout>
 
             <Button
