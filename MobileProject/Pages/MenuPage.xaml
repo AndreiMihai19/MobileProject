@@ -69,12 +69,81 @@
             VerticalOptions="End" 
             Padding="-78,0,0,20"   
              />
+            
+            
 
         </StackLayout>
 
-        <StackLayout  Orientation="Horizontal" BackgroundColor="#FFE033" WidthRequest="400" HeightRequest="690">
+        <StackLayout  Orientation="Vertical" BackgroundColor="#FFE033" WidthRequest="400" HeightRequest="690">
 
-                <Button 
+            <Label
+            Text="Door Status"
+            FontAttributes="Bold"
+            FontSize="Medium"
+            HorizontalOptions="Start"
+            VerticalOptions="Start"    
+            TranslationX="50"
+            TranslationY="50"
+             />
+            
+            <Button 
+                x:Name="activities_button"
+                Text="Activities"
+                FontAttributes="Bold"
+                FontSize="Small"
+                TextColor="White"
+                VerticalOptions="Start"
+                BackgroundColor="Black"
+                WidthRequest="130"
+                HeightRequest="70"
+                TranslationX="100"
+                TranslationY="10"
+                />
+            
+            <Button 
+                x:Name="lights_button"
+                Text="Lights"
+                FontAttributes="Bold"
+                FontSize="Medium"
+                TextColor="White"
+                VerticalOptions="Start"
+                BackgroundColor="Black"
+                WidthRequest="330"
+                HeightRequest="120"
+                TranslationX="1"
+                TranslationY="90"
+                />
+
+            <Button 
+                x:Name="temperature_button"
+                Text="Temperature"
+                FontAttributes="Bold"
+                FontSize="Medium"
+                TextColor="White"
+                VerticalOptions="Start"
+                BackgroundColor="Black"
+                WidthRequest="330"
+                HeightRequest="120"
+                TranslationX="1"
+                TranslationY="110"
+                />
+
+            <Button 
+                x:Name="door_button"
+                Text="Door"
+                FontAttributes="Bold"
+                FontSize="Medium"
+                TextColor="White"
+                VerticalOptions="Start"
+                BackgroundColor="Black"
+                WidthRequest="330"
+                HeightRequest="120"
+                TranslationX="1"
+                TranslationY="130"
+                />
+
+
+            <Button 
                 x:Name="back_button"
                 Text="Back"
                 FontAttributes="Bold"
@@ -84,9 +153,11 @@
                 BackgroundColor="Black"
                 WidthRequest="200"
                 Clicked="Back_Button" 
-                TranslationX="100"
-                TranslationY="-20"
+                TranslationX="1"
+                TranslationY="170"
                 />
+            
+                
 
         </StackLayout>
 
