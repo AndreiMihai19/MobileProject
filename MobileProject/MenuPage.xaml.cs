@@ -9,6 +9,6 @@ public partial class MenuPage : ContentPage
 
 	private async void Back_Button(object sender, EventArgs e)
 	{
-		await Navigation.PushAsync(new MainPage());
+		await Navigation.PushAsync(new LoginPage());
 	}
 }

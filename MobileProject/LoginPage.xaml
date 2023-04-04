@@ -3,7 +3,7 @@
              Shell.NavBarIsVisible="False"
              BackgroundColor="White"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MobileProject.MainPage">
+             x:Class="MobileProject.LoginPage">
 
     <ScrollView>
         <VerticalStackLayout
@@ -34,7 +34,6 @@
                 <Frame Margin="20,0,0,0" Padding="0" HasShadow="True" BorderColor="White" HorizontalOptions="FillAndExpand">
                     <Entry x:Name="entry_password" Placeholder="password" IsPassword="True" TextColor="#000000"/>
                 </Frame>
-                <?comentariu?>
             </StackLayout>
 
             <Button
