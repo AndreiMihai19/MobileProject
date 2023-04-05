@@ -9,75 +9,67 @@
             Spacing="25"
             Padding="30,0">
 
-        <StackLayout  Orientation="Horizontal" BackgroundColor="#FFE033" WidthRequest="400" HeightRequest="90">
+        <StackLayout  Orientation="Vertical" BackgroundColor="#FFFFFF" WidthRequest="400" HeightRequest="90">
 
             <Label      
             Text="User Name"
             FontSize="Small"
             FontAttributes="Bold"
-            VerticalOptions="Start" 
-            Padding="15,15,0,0"   
-             />
-
-
-            <Label
-            x:Name="username_show"
-            Text="User Name"
-            FontAttributes="Bold"
-            FontSize="Small"
-            HorizontalOptions="Start"
-            VerticalOptions="End" 
-            Padding="-74,0,0,20"   
+            TranslationX="15"
+            TranslationY="15"
              />
 
             <Label
             Text="Current Local Time"
             FontAttributes="Bold"
             FontSize="Small"
-            HorizontalOptions="Center"
-            VerticalOptions="Start" 
-            Padding="50,15,0,0"   
-                
+            TranslationX="130"
+            TranslationY="-4" 
+             />
+
+            <Label
+            x:Name="doorstatus_show"
+            Text="Door Status"
+            FontAttributes="Bold"
+            FontSize="Small"
+            TranslationX="300"
+            TranslationY="-24"   
+             />
+            
+            <Label
+            x:Name="username_show"
+            Text="User Name"
+            FontAttributes="Bold"
+            FontSize="Small"
+            TranslationX="15"
+            TranslationY="-5"   
              />
 
             <Label
             x:Name="currentlocaltime_show"
             Text="Current Local Time"
             FontAttributes="Bold"
-            FontSize="Small"
-            HorizontalOptions="Center"
-            VerticalOptions="End" 
-            Padding="-125,0,0,20"   
-                
-             />
-            
-            <Label
-            x:Name="doorstatus_show"
-            Text="Door Status"
-            FontAttributes="Bold"
-            FontSize="Small"
-            HorizontalOptions="End"
-            VerticalOptions="Start" 
-            Padding="35,15,0,0"   
+            FontSize="Small" 
+            TranslationX="130"
+            TranslationY="-25"    
              />
 
             <Label
             Text="Door Status"
             FontAttributes="Bold"
             FontSize="Small"
-            HorizontalOptions="End"
-            VerticalOptions="End" 
-            Padding="-78,0,0,20"   
+            TranslationX="300"
+            TranslationY="-45" 
              />
             
             
 
         </StackLayout>
 
-        <StackLayout  Orientation="Vertical" BackgroundColor="#FFE033" WidthRequest="400" HeightRequest="690">
+        <StackLayout  Orientation="Vertical" BackgroundColor="#FFFFFF" TranslationY="-17" WidthRequest="400" HeightRequest="700">
 
             <Label
-            Text="Door Status"
+            Text="Manual"
             FontAttributes="Bold"
             FontSize="Medium"
             HorizontalOptions="Start"
