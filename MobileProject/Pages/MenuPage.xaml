@@ -15,7 +15,7 @@
             FontAttributes="Bold"
             TranslationX="15"
             TranslationY="15"
-             />
+            />
 
             <Label
             Text="Current Local Time"
@@ -45,11 +45,10 @@
 
             <Label
             x:Name="currentlocaltime_show"
-            Text="Current Local Time"
             FontAttributes="Bold"
             FontSize="Small" 
-            TranslationX="130"
-            TranslationY="-25"    
+            HorizontalOptions="Center"
+            TranslationY="-25" 
              />
 
             <Label

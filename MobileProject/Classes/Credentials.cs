@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,22 +9,33 @@ namespace MobileProject
 {
     class Credentials
     {
-        private string username;
+        public static string username;
         private string password;
+        private static string user_type;
 
-        public Credentials (string username, string password)
+        public Credentials (string password)
         {
-            this.username = username;
             this.password = password;
         }
-        public string GetUsername()
+
+        public static void SetUsername(string u)
         {
-            return username;
+            username = u;
         }
 
         public string GetPassword() 
         { 
             return password;
+        }
+
+        public static string GetUserType() 
+        { 
+            return user_type; 
+        }
+
+        public static void SetUserType(string u)
+        {
+            user_type = u;
         }
     }
 }
