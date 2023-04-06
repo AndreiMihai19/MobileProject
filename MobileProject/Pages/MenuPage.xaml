@@ -9,7 +9,7 @@
             Spacing="25"
             Padding="30,0">
 
-        <StackLayout  Orientation="Vertical" BackgroundColor="#FFFFFF" WidthRequest="400" HeightRequest="90">
+        <StackLayout  Orientation="Vertical" BackgroundColor="#FFF4B7" WidthRequest="400" HeightRequest="90">
 
             <Label      
             Text="User Name"
@@ -66,7 +66,7 @@
 
         </StackLayout>
 
-        <StackLayout  Orientation="Vertical" BackgroundColor="#FFFFFF" TranslationY="-17" WidthRequest="400" HeightRequest="700">
+        <StackLayout  Orientation="Vertical" BackgroundColor="#FFF4B7" TranslationY="-17" WidthRequest="400" HeightRequest="700">
 
             <Label
             Text="Manual"
@@ -91,46 +91,47 @@
                 TranslationX="100"
                 TranslationY="10"
                 />
+         
             
-            <Button 
+            <Button
                 x:Name="lights_button"
                 Text="Lights"
+                ImageSource="light_bulb.png"
                 FontAttributes="Bold"
-                FontSize="Medium"
+                FontSize="27"
                 TextColor="White"
                 VerticalOptions="Start"
                 BackgroundColor="Black"
                 WidthRequest="330"
                 HeightRequest="120"
-                TranslationX="1"
                 TranslationY="90"
                 />
 
             <Button 
                 x:Name="temperature_button"
                 Text="Temperature"
+                ImageSource="temperature.png"
                 FontAttributes="Bold"
-                FontSize="Medium"
+                FontSize="27"
                 TextColor="White"
                 VerticalOptions="Start"
                 BackgroundColor="Black"
                 WidthRequest="330"
                 HeightRequest="120"
-                TranslationX="1"
                 TranslationY="110"
                 />
 
             <Button 
                 x:Name="door_button"
                 Text="Door"
+                ImageSource="door.png"
                 FontAttributes="Bold"
-                FontSize="Medium"
+                FontSize="27"
                 TextColor="White"
                 VerticalOptions="Start"
                 BackgroundColor="Black"
                 WidthRequest="330"
                 HeightRequest="120"
-                TranslationX="1"
                 TranslationY="130"
                 />
 
