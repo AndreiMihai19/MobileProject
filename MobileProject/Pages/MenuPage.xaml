@@ -5,9 +5,7 @@
              BackgroundColor="Black"
              x:Class="MobileProject.MenuPage"
              Title="MenuPage">
-    <VerticalStackLayout
-            Spacing="25"
-            Padding="30,0">
+    <VerticalStackLayout Spacing="25">
 
         <StackLayout  Orientation="Vertical" BackgroundColor="#FFF4B7" WidthRequest="400" HeightRequest="90">
 
