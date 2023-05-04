@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="Black"
+             x:Class="MobileProject.Pages.Temperature"
+             Title="Temperature">
+    <VerticalStackLayout Spacing="25">
+
+        <StackLayout  Orientation="Vertical" BackgroundColor="#FFF4B7" WidthRequest="400" HeightRequest="90">
+
+            <Label      
+            Text="User Name"
+            FontSize="Small"
+            FontAttributes="Bold"
+            TranslationX="15"
+            TranslationY="15"
+             ></Label>
+
+            <Label
+            Text="Current Local Time"
+            FontAttributes="Bold"
+            FontSize="Small"
+            TranslationX="130"
+            TranslationY="-4" 
+              ></Label>
+
+            <Label
+            x:Name="doorstatus_show"
+            Text="Door Status"
+            FontAttributes="Bold"
+            FontSize="Small"
+            TranslationX="300"
+            TranslationY="-24"   
+             ></Label>
+
+            <Label
+            x:Name="username_show"
+            Text="User Name"
+            FontAttributes="Bold"
+            FontSize="Small"
+            TranslationX="15"
+            TranslationY="-5"   
+            ></Label>
+
+            <Label
+            x:Name="currentlocaltime_show"
+            FontAttributes="Bold"
+            FontSize="Small" 
+            HorizontalOptions="Center"
+            TranslationY="-25" 
+             ></Label>
+
+            <Label
+            Text="Door Status"
+            FontAttributes="Bold"
+            FontSize="Small"
+            TranslationX="300"
+            TranslationY="-45" 
+             ></Label>
+
+
+
+        </StackLayout>
+
+        <StackLayout Orientation="Vertical" BackgroundColor="#FFF4B7" TranslationY="-17" WidthRequest="400" HeightRequest="700">
+
+            <Frame BackgroundColor="Black" BorderColor="White" WidthRequest="20" HeightRequest="80" TranslationY="30">
+
+                <Label
+                       Text="Temperature"
+                       FontSize="25"
+                       HorizontalTextAlignment="Center"
+                       TextColor="White"
+                ></Label>
+                
+                </Frame>
+
+            <Frame WidthRequest="100" HeightRequest="400" CornerRadius="200" BackgroundColor="Black" TranslationY="80">
+                <Grid>
+                    <Ellipse Fill="White"
+                             WidthRequest="260"
+                             HeightRequest="260"
+                    />
+                    <Label x:Name="temperature_value"
+                           Text="18" 
+                           TextColor="Black" 
+                           TranslationX="100" 
+                           VerticalTextAlignment="Center"
+                           FontSize="70"
+                           />
+
+                    <Label Text="o" 
+                           TextColor="Black" 
+                           TranslationX="185"
+                           TranslationY="110"
+                           VerticalTextAlignment="Start"
+                           FontSize="50"
+                           />
+
+                    <Label Text="C" 
+                           TextColor="Black" 
+                           TranslationX="220" 
+                           VerticalTextAlignment="Center"
+                           FontSize="70"
+                           />
+
+                    <Button 
+                        x:Name="Plus"
+                        Text="+"
+                        TextColor="White"
+                        FontSize="60"
+                        VerticalOptions="Center"
+                        HorizontalOptions="End"
+                        TranslationX="10"
+                        BackgroundColor="Black"
+                        HeightRequest="100"
+                        WidthRequest="60"
+                        Clicked="Plus_Button"
+                        
+                />
+                    <Button 
+                        x:Name="Minus"
+                        Text="-"
+                        TextColor="White"
+                        FontSize="60"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Start"
+                        TranslationX="-10"
+                        BackgroundColor="Black"
+                        HeightRequest="100"
+                        WidthRequest="60"
+                        Clicked="Minus_Button"
+                        
+                />
+                </Grid>
+
+            </Frame>
+
+            <Button 
+                x:Name="back_button"
+                Text="Back"
+                FontAttributes="Bold"
+                FontSize="Medium"
+                TextColor="White"
+                VerticalOptions="End"
+                BackgroundColor="Black"
+                WidthRequest="200"
+                Clicked="Back_Button" 
+                TranslationX="1"
+                TranslationY="150"
+                />
+
+
+
+
+        </StackLayout>
+    </VerticalStackLayout>
+</ContentPage>

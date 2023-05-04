@@ -4,9 +4,10 @@ namespace MobileProject;
 
 public partial class MenuPage : ContentPage
 {
+
     [Obsolete]
     public MenuPage()
-	{   
+	{  
 		InitializeComponent();
 
 		username_show.Text = Credentials.username; 
@@ -24,16 +25,20 @@ public partial class MenuPage : ContentPage
 	{
 		if (Credentials.GetUserType() == "user")
 		{
-			await Navigation.PushAsync(new LoginPage());
+            await Navigation.PopAsync();
+            await Navigation.PushAsync(new LoginPage());
 		}
 		else
 		{
-			await Navigation.PushAsync(new AdminMenu());
+            await Navigation.PopAsync();
+            await Navigation.PushAsync(new AdminMenu());
 		}
 
 	}
 
-	
+	private async void Temperature_Button(object sender, EventArgs e)
+    {
+		await Navigation.PushAsync(new Temperature());
 
-
+    }
 }

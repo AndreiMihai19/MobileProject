@@ -1,4 +1,4 @@
-﻿namespace MobileProject;
+﻿namespace MobileProject; 
 
 public partial class App : Application
 {

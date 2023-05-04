@@ -116,6 +116,7 @@
                 WidthRequest="330"
                 HeightRequest="120"
                 TranslationY="110"
+                Clicked="Temperature_Button"
                 />
 
             <Button 

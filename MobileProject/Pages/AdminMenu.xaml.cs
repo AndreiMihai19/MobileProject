@@ -20,5 +20,6 @@ public partial class AdminMenu : ContentPage
     private async void AdminMenu_Button(object sender, EventArgs e)
     {
         await Navigation.PushAsync(new MenuPage());
+        
     }
 }
