@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             Shell.NavBarIsVisible="False"
-             BackgroundColor="Black"
-             x:Class="MobileProject.Pages.Temperature"
-             Title="Temperature">
-    <VerticalStackLayout Spacing="25">
+             x:Class="MobileProject.Pages.Light"
+             Title="Light">
+    <VerticalStackLayout>
 
         <StackLayout  Orientation="Vertical" BackgroundColor="#FFF4B7" WidthRequest="400" HeightRequest="90">
 
             <Label      
             Text="User Name"
-            TextColor="Black"
             FontSize="Small"
             FontAttributes="Bold"
             TranslationX="15"
@@ -20,7 +17,6 @@
 
             <Label
             Text="Current Local Time"
-            TextColor="Black"
             FontAttributes="Bold"
             FontSize="Small"
             TranslationX="130"
@@ -30,7 +26,6 @@
             <Label
             x:Name="doorstatus_show"
             Text="Door Status"
-            TextColor="Black"
             FontAttributes="Bold"
             FontSize="Small"
             TranslationX="300"
@@ -40,7 +35,6 @@
             <Label
             x:Name="username_show"
             Text="User Name"
-            TextColor="Black"
             FontAttributes="Bold"
             FontSize="Small"
             TranslationX="15"
@@ -49,7 +43,6 @@
 
             <Label
             x:Name="currentlocaltime_show"
-            TextColor="Black"
             FontAttributes="Bold"
             FontSize="Small" 
             HorizontalOptions="Center"
@@ -57,9 +50,7 @@
              />
 
             <Label
-            x:Name="global_door_status"
             Text="Door Status"
-            TextColor="Black"
             FontAttributes="Bold"
             FontSize="Small"
             TranslationX="300"
@@ -69,6 +60,7 @@
 
 
         </StackLayout>
+
 
         <StackLayout Orientation="Vertical" BackgroundColor="#FFF4B7" TranslationY="-17" WidthRequest="400" HeightRequest="700">
 
@@ -80,8 +72,8 @@
                        HorizontalTextAlignment="Center"
                        TextColor="White"
                 ></Label>
-                
-                </Frame>
+
+            </Frame>
 
             <Frame WidthRequest="100" HeightRequest="400" CornerRadius="200" BackgroundColor="Black" TranslationY="80">
                 <Grid>
@@ -123,7 +115,6 @@
                         BackgroundColor="Black"
                         HeightRequest="100"
                         WidthRequest="60"
-                        Clicked="Plus_Button"
                         
                 />
                     <Button 
@@ -137,7 +128,7 @@
                         BackgroundColor="Black"
                         HeightRequest="100"
                         WidthRequest="60"
-                        Clicked="Minus_Button"
+
                         
                 />
                 </Grid>
@@ -153,7 +144,6 @@
                 VerticalOptions="End"
                 BackgroundColor="Black"
                 WidthRequest="200"
-                Clicked="Back_Button" 
                 TranslationX="1"
                 TranslationY="150"
                 />

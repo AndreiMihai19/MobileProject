@@ -17,6 +17,7 @@ public partial class LoginPage : ContentPage
 
             Credentials.SetUsername(entry_username.Text);
 
+
             if (Credentials.username == "admin" && cred.GetPassword() == "admin")
             {
                 Credentials.SetUserType("admin");
