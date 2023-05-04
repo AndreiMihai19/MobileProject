@@ -80,6 +80,7 @@
                 HeightRequest="70"
                 TranslationX="1"
                 TranslationY="120"
+                Clicked="CreateUser_Button"
                 />
 
             <Button 
