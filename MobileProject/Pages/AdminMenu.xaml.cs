@@ -22,4 +22,9 @@ public partial class AdminMenu : ContentPage
         await Navigation.PushAsync(new MenuPage());
         
     }
+
+    private async void CreateUser_Button(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new CreateAccountPage());
+    }
 }

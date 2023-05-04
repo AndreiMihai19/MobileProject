@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileProject.Pages.CreateAccountPage"
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="Black"
+             Title="CreateAccountPage">
+
+    <VerticalStackLayout Spacing="25">
+
+        <StackLayout  Orientation="Vertical" BackgroundColor="#FFF4B7" WidthRequest="400" HeightRequest="90">
+
+            <Label      
+            Text="User Name"
+            FontSize="Small"
+            FontAttributes="Bold"
+            TranslationX="15"
+            TranslationY="15"
+             />
+
+            <Label
+            Text="Current Local Time"
+            FontAttributes="Bold"
+            FontSize="Small"
+            TranslationX="130"
+            TranslationY="-4" 
+             />
+
+            <Label
+            x:Name="doorstatus_show"
+            Text="Door Status"
+            FontAttributes="Bold"
+            FontSize="Small"
+            TranslationX="300"
+            TranslationY="-24"   
+             />
+
+            <Label
+            x:Name="username_show"
+            Text="User Name"
+            FontAttributes="Bold"
+            FontSize="Small"
+            TranslationX="15"
+            TranslationY="-5"   
+             />
+
+            <Label
+            x:Name="currentlocaltime_show"
+            FontAttributes="Bold"
+            FontSize="Small" 
+            HorizontalOptions="Center"
+            TranslationY="-25"    
+             />
+
+            <Label
+            Text="Door Status"
+            FontAttributes="Bold"
+            FontSize="Small"
+            TranslationX="300"
+            TranslationY="-45" 
+             />
+
+
+
+        </StackLayout>
+        
+
+        <StackLayout  Orientation="Vertical" BackgroundColor="#FFF4B7" TranslationY="-17" WidthRequest="400" HeightRequest="700">
+
+            <Image Source="logo.png" HeightRequest="200" WidthRequest="200"/>
+
+            <Label 
+            Text="Create User Account"
+            SemanticProperties.HeadingLevel="Level1"
+            FontSize="30"
+            HorizontalOptions="Center" 
+            VerticalOptions="Center"/>
+
+
+
+
+            <Frame BorderColor="Black" Margin="23,50,23,50" >
+                <StackLayout Orientation="Vertical" >
+
+                    <Label
+                        Text="Username:"   
+                        FontAttributes="Bold"
+                        FontSize="Medium"
+                        TextColor="#000000"
+                        TranslationY="35"
+                        
+                    />
+
+                    <Frame Margin="100,2,20,5" Padding="0" HasShadow="True" BorderColor="White" HorizontalOptions="FillAndExpand">
+                        <Entry x:Name="entry_username" VerticalOptions="Center" TextColor="#000000" />
+                    </Frame>
+
+                    <Label
+                        Text="Password:"   
+                        FontAttributes="Bold"
+                        FontSize="Medium"
+                        TextColor="#000000"
+                        TranslationY="50"
+                        
+                    />
+
+                    <Frame Margin="100,20,20,40" Padding="0" HasShadow="True" BorderColor="White" HorizontalOptions="FillAndExpand">
+                        <Entry x:Name="entry_password" VerticalOptions="Center" IsPassword="True" TextColor="#000000" />
+                    </Frame>
+
+                    <Button
+                        x:Name="create_user"
+                        Text="Create"
+                        TextColor="#000000"
+                        HorizontalOptions="End" 
+                        BackgroundColor="#FFE033"
+                        WidthRequest="130"
+                        Clicked="CreateUser_Button"
+                    />
+
+                </StackLayout>
+
+            </Frame>
+
+            <Button
+                x:Name="Back"
+                Text="Back"
+                TextColor="Black"
+                HorizontalOptions="Center" 
+                BackgroundColor="#FFE033"
+                WidthRequest="200"
+                Clicked="Back_Button"
+                />
+
+        </StackLayout>
+
+    </VerticalStackLayout>
+</ContentPage>
