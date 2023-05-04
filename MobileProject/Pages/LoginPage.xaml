@@ -28,7 +28,7 @@
                 </Frame>
 
             </StackLayout>
-
+ 
             <StackLayout Orientation="Horizontal">
 
                 <Frame Margin="20,0,0,0" Padding="0" HasShadow="True" BorderColor="White" HorizontalOptions="FillAndExpand">
