@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             Shell.NavBarIsVisible="False"
-             BackgroundColor="Black"
-             x:Class="MobileProject.MenuPage"
-             Title="MenuPage">
-    <VerticalStackLayout Spacing="25">
+             x:Class="MobileProject.Pages.Door"
+             Title="Light">
+    <VerticalStackLayout>
 
         <StackLayout  Orientation="Vertical" BackgroundColor="#FFF4B7" WidthRequest="400" HeightRequest="90">
 
@@ -17,7 +15,7 @@
             TranslationX="15"
             TranslationY="15"
             />
-
+           
             <Label
             Text="Current Local Time"
             TextColor="Black"
@@ -58,7 +56,7 @@
 
             <Label
             x:Name="global_door_status"
-            Text="Nu-i bine"
+            Text="Closed"
             TextColor="Black"
             FontAttributes="Bold"
             FontSize="Small"
@@ -70,38 +68,38 @@
 
         </StackLayout>
 
-        <StackLayout  Orientation="Vertical" BackgroundColor="#FFF4B7" TranslationY="-17" WidthRequest="400" HeightRequest="700">
 
-            <Label
-            Text="Manual"
-            TextColor="Black"
+        <StackLayout Orientation="Vertical" BackgroundColor="#FFF4B7" TranslationY="-17" WidthRequest="400" HeightRequest="700">
+
+            <StackLayout  Orientation="Vertical" BackgroundColor="#FFF4B7" TranslationY="-17" WidthRequest="400" HeightRequest="700">
+
+                <Label
+            Text="Door Status"
+            FontSize="Large"
+            TextColor="black"
             FontAttributes="Bold"
-            FontSize="Medium"
             HorizontalOptions="Start"
             VerticalOptions="Start"    
             TranslationX="50"
             TranslationY="50"
              />
-            
-            <Button 
-                x:Name="activities_button"
-                Text="Activities"
-                FontAttributes="Bold"
-                FontSize="Small"
-                TextColor="White"
-                VerticalOptions="Start"
-                BackgroundColor="Black"
-                WidthRequest="130"
-                HeightRequest="70"
-                TranslationX="100"
-                TranslationY="10"
-                />
-         
-            
-            <Button
-                x:Name="lights_button"
-                Text="Lights"
-                ImageSource="light_bulb.png"
+
+                <Label
+            x:Name="door_status"
+            TextColor="black"
+            Text="Door Status"
+            FontSize="Large"
+            FontAttributes="Bold"
+            HorizontalOptions="Start"
+            VerticalOptions="Start"    
+            TranslationX="50"
+            TranslationY="50"
+             />
+
+
+                <Button
+                x:Name="open_door_button"
+                Text="Open Door"
                 FontAttributes="Bold"
                 FontSize="27"
                 TextColor="White"
@@ -110,13 +108,13 @@
                 WidthRequest="330"
                 HeightRequest="120"
                 TranslationY="90"
-                Clicked="light_button"
+                Clicked="open_door_Button"
+             
                 />
 
-            <Button 
-                x:Name="temperature_button"
-                Text="Temperature"
-                ImageSource="temperature.png"
+                <Button 
+                x:Name="close_door_button"
+                Text="Close Door"
                 FontAttributes="Bold"
                 FontSize="27"
                 TextColor="White"
@@ -125,26 +123,11 @@
                 WidthRequest="330"
                 HeightRequest="120"
                 TranslationY="110"
-                Clicked="Temperature_Button"
+                Clicked="close_door_Button"
                 />
 
-            <Button 
-                x:Name="door_button"
-                Text="Door"
-                ImageSource="door.png"
-                FontAttributes="Bold"
-                FontSize="27"
-                TextColor="White"
-                VerticalOptions="Start"
-                BackgroundColor="Black"
-                WidthRequest="330"
-                HeightRequest="120"
-                TranslationY="130"
-                Clicked="Door_Button"
-                />
-
-
-            <Button 
+             
+                <Button 
                 x:Name="back_button"
                 Text="Back"
                 FontAttributes="Bold"
@@ -153,15 +136,22 @@
                 VerticalOptions="End"
                 BackgroundColor="Black"
                 WidthRequest="200"
-                Clicked="Back_Button" 
                 TranslationX="1"
                 TranslationY="170"
+                    Clicked="back_button2"
+                    
                 />
-            
-                
+
+
+
+            </StackLayout>
+
+
+           
+
+
+
 
         </StackLayout>
-
-       
     </VerticalStackLayout>
 </ContentPage>

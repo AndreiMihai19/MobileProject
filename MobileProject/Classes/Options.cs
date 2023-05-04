@@ -10,13 +10,26 @@ namespace MobileProject.Classes
     {
         private static int lights;
         private static int temperature = 18;
-        private static int door_status;
+        private static int door_status = 1;
 
         //public int getLights() { return lights;}
 
         //public void setLights(int value) { lights = value; }
 
         public static int GetTemperature() { return temperature; }
+
+        public static string GetDoorStatus()
+        {
+            if (door_status == 1)
+            {
+                return "Open";
+            }
+            else
+                return "Closed";
+        }
+            // return door_status; }
+        public static void Door_Open(){ door_status = 1; }
+        public static void Door_Close(){ door_status = 0; }
 
         public static void IncreaseTemperature() { temperature++; }
 
