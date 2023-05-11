@@ -95,6 +95,7 @@
                 HeightRequest="70"
                 TranslationX="1"
                 TranslationY="150"
+                 Clicked="showusers_button1"
                 />
 
             <Button 

@@ -27,4 +27,9 @@ public partial class AdminMenu : ContentPage
     {
         await Navigation.PushAsync(new CreateAccountPage());
     }
+
+    private async void showusers_button1(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new Baza());
+    }
 }

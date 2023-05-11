@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileProject.Pages.Baza"
+             Title="Baza">
+    <VerticalStackLayout>
+        <Label 
+            x:Name="BazaDeDate1"
+            Text="Welcome to .NET MAUI!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+
+        <Button 
+                        x:Name="button_baza"
+                        Text="-"
+                        TextColor="White"
+                        FontSize="60"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Start"
+                        TranslationX="-10"
+                        BackgroundColor="Black"
+                        HeightRequest="100"
+                        WidthRequest="60"
+                        Clicked="button_baza_Clicked"
+                        />
+    </VerticalStackLayout>
+</ContentPage>
