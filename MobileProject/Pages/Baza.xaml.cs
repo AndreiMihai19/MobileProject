@@ -12,7 +12,7 @@ public partial class Baza : ContentPage
 		InitializeComponent();
         
     }
-
+     
     private void button_baza_Clicked(object sender, EventArgs e)
     {
         string connectionString = "server=localhost:3306;user=andrei;password=1234;database=mobile_app";
