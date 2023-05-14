@@ -9,6 +9,7 @@
 
             <Label      
             Text="User Name"
+                TextColor="black"
             FontSize="Small"
             FontAttributes="Bold"
             TranslationX="15"
@@ -17,6 +18,7 @@
 
             <Label
             Text="Current Local Time"
+                TextColor="black"
             FontAttributes="Bold"
             FontSize="Small"
             TranslationX="130"
@@ -25,6 +27,7 @@
 
             <Label
             x:Name="doorstatus_show"
+                TextColor="black"
             Text="Door Status"
             FontAttributes="Bold"
             FontSize="Small"
@@ -34,6 +37,7 @@
 
             <Label
             x:Name="username_show"
+                TextColor="black"
             Text="User Name"
             FontAttributes="Bold"
             FontSize="Small"
@@ -43,6 +47,7 @@
 
             <Label
             x:Name="currentlocaltime_show"
+                TextColor="black"
             FontAttributes="Bold"
             FontSize="Small" 
             HorizontalOptions="Center"
@@ -51,6 +56,7 @@
 
             <Label
             Text="Door Status"
+                TextColor="black"
             FontAttributes="Bold"
             FontSize="Small"
             TranslationX="300"
@@ -64,76 +70,34 @@
 
         <StackLayout Orientation="Vertical" BackgroundColor="#FFF4B7" TranslationY="-17" WidthRequest="400" HeightRequest="700">
 
-            <Frame BackgroundColor="Black" BorderColor="White" WidthRequest="20" HeightRequest="80" TranslationY="30">
+            <Label
+            x:Name="light_value_test"
+            Text="Nu-i bine"
+            TextColor="Black"
+            FontAttributes="Bold"
+            FontSize="Small"
+            TranslationX="300"
+            TranslationY="145" 
+             />
+            
+            
+            
+            
 
-                <Label
-                       Text="Temperature"
-                       FontSize="25"
-                       HorizontalTextAlignment="Center"
-                       TextColor="White"
-                ></Label>
-
-            </Frame>
-
-            <Frame WidthRequest="100" HeightRequest="400" CornerRadius="200" BackgroundColor="Black" TranslationY="80">
-                <Grid>
-                    <Ellipse Fill="White"
-                             WidthRequest="260"
-                             HeightRequest="260"
-                    />
-                    <Label x:Name="temperature_value"
-                           Text="18" 
-                           TextColor="Black" 
-                           TranslationX="100" 
-                           VerticalTextAlignment="Center"
-                           FontSize="70"
-                           />
-
-                    <Label Text="o" 
-                           TextColor="Black" 
-                           TranslationX="185"
-                           TranslationY="110"
-                           VerticalTextAlignment="Start"
-                           FontSize="50"
-                           />
-
-                    <Label Text="C" 
-                           TextColor="Black" 
-                           TranslationX="220" 
-                           VerticalTextAlignment="Center"
-                           FontSize="70"
-                           />
-
-                    <Button 
-                        x:Name="Plus"
-                        Text="+"
-                        TextColor="White"
-                        FontSize="60"
-                        VerticalOptions="Center"
-                        HorizontalOptions="End"
-                        TranslationX="10"
-                        BackgroundColor="Black"
-                        HeightRequest="100"
-                        WidthRequest="60"
-                        
+            <Slider 
+               
+                Minimum="0"
+                Maximum="100"
+                ThumbColor="Black"
+                Value="50"
+                TranslationY="170"
+                ValueChanged="Slider_ValueChanged"
                 />
-                    <Button 
-                        x:Name="Minus"
-                        Text="-"
-                        TextColor="White"
-                        FontSize="60"
-                        VerticalOptions="Center"
-                        HorizontalOptions="Start"
-                        TranslationX="-10"
-                        BackgroundColor="Black"
-                        HeightRequest="100"
-                        WidthRequest="60"
 
-                        
-                />
-                </Grid>
-
-            </Frame>
+            
+            
+            
+            
 
             <Button 
                 x:Name="back_button"
@@ -146,6 +110,7 @@
                 WidthRequest="200"
                 TranslationX="1"
                 TranslationY="150"
+                Clicked="back_button_Clicked"
                 />
 
 

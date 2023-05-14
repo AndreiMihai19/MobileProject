@@ -73,7 +73,7 @@
         <StackLayout  Orientation="Vertical" BackgroundColor="#FFF4B7" TranslationY="-17" WidthRequest="400" HeightRequest="700">
 
             <Label
-            Text="Manual"
+                x:Name="activities_types"
             TextColor="Black"
             FontAttributes="Bold"
             FontSize="Medium"
@@ -95,6 +95,7 @@
                 HeightRequest="70"
                 TranslationX="100"
                 TranslationY="10"
+                Clicked="activities_button_Clicked"
                 />
          
             

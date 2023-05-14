@@ -1,5 +1,6 @@
 ﻿using MobileProject.Classes;
 using MobileProject.Pages;
+using System.Xml.Linq;
 
 namespace MobileProject;
 
@@ -18,6 +19,7 @@ public partial class MenuPage : ContentPage
         Device.StartTimer(TimeSpan.FromSeconds(1), () =>
 		{
             global_door_status.Text = Options.GetDoorStatus();
+            activities_types.Text = Options.GetActivityType();
             currentlocaltime_show.Text = DateTime.Now.ToString("HH:mm:ss");
 			return true;
 		});
@@ -57,5 +59,10 @@ public partial class MenuPage : ContentPage
     private async void Door_Button(object sender, EventArgs e)
     {
         await Navigation.PushAsync(new Door());
+    }
+
+    private async void activities_button_Clicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new Activity());
     }
 }
