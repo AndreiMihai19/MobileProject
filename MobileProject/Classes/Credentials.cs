@@ -12,6 +12,8 @@ namespace MobileProject
         public static string username;
         private string password;
         private static string user_type;
+        private string IMEI;
+        private string email;
 
         public Credentials (string password)
         {
