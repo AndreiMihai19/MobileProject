@@ -61,8 +61,7 @@
 	<ItemGroup>
 		<PackageReference Include="Extended.Wpf.Toolkit" Version="4.5.0" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
-		<PackageReference Include="MySql.Data" Version="8.0.33" />
-		<PackageReference Include="MySqlConnector" Version="2.2.6" />
+		<PackageReference Include="MySql.Data" Version="8.0.32.1" />
 	</ItemGroup>
 
 	<ItemGroup>

@@ -5,7 +5,7 @@ public partial class Activity : ContentPage
 	public Activity()
 	{
 		InitializeComponent();
-        username_show.Text = User.username;
+        username_show.Text = Credentials.username;
 
         Device.StartTimer(TimeSpan.FromSeconds(1), () =>
         {

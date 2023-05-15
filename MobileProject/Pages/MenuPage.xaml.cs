@@ -63,6 +63,6 @@ public partial class MenuPage : ContentPage
 
     private async void activities_button_Clicked(object sender, EventArgs e)
     {
-        //await Navigation.PushAsync(new Activity());
+        await Navigation.PushAsync(new Activity());
     }
 }
