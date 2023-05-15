@@ -9,7 +9,7 @@ public partial class Temperature : ContentPage
 	{
 		InitializeComponent();
 
-        username_show.Text = Credentials.username;
+        username_show.Text = User.username;
 
         Device.StartTimer(TimeSpan.FromSeconds(1), () =>
         {

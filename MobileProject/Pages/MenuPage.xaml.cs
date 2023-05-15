@@ -12,7 +12,7 @@ public partial class MenuPage : ContentPage
 	{  
 		InitializeComponent();
 
-		username_show.Text = Credentials.username;
+		username_show.Text = User.username;
 
         
 
@@ -31,7 +31,7 @@ public partial class MenuPage : ContentPage
     [Obsolete]
     private async void Back_Button(object sender, EventArgs e)
 	{
-		if (Credentials.GetUserType() == "user")
+		if (User.GetUserType() == "user")
 		{
             await Navigation.PopAsync();
             await Navigation.PushAsync(new LoginPage());

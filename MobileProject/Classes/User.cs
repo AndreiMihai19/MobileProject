@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MobileProject
 {
-    class Credentials
+    class User
     {
         public static string username;
         private string password;
@@ -15,7 +15,7 @@ namespace MobileProject
         private string IMEI;
         private string email;
 
-        public Credentials (string password)
+        public User (string password)
         {
             this.password = password;
         }
@@ -38,6 +38,30 @@ namespace MobileProject
         public static void SetUserType(string u)
         {
             user_type = u;
+        }
+
+        public bool CheckIsAdmin()
+        {
+            if (username == "admin" && password == "admin")
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public bool CheckUser(string usr, string pwd)
+        {
+            if (username == usr && password == pwd)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }
