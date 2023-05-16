@@ -61,8 +61,8 @@ public partial class MenuPage : ContentPage
         await Navigation.PushAsync(new Door());
     }
 
-    private async void activities_button_Clicked(object sender, EventArgs e)
-    {
-        await Navigation.PushAsync(new Activity());
-    }
+    //private async void activities_button_Clicked(object sender, EventArgs e)
+    //{
+    //    await Navigation.PushAsync(new Activity());
+    //}
 }

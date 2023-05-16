@@ -18,7 +18,7 @@ public partial class LoginPage : ContentPage
 
          User.SetUsername(entry_username.Text);
 
-        if (user.CheckUser("andrei","andrei") == true)
+        if (user.CheckUser("andrei","andrei") || user.CheckUser("admin", "admin"))
         {
             if (user.CheckIsAdmin() == true)
             {

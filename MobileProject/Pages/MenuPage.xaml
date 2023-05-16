@@ -82,7 +82,7 @@
             TranslationX="50"
             TranslationY="50"
              />
-            
+
             <Button 
                 x:Name="activities_button"
                 Text="Activities"
@@ -95,7 +95,6 @@
                 HeightRequest="70"
                 TranslationX="100"
                 TranslationY="10"
-                Clicked="activities_button_Clicked"
                 />
          
             
