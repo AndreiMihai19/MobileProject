@@ -12,21 +12,21 @@ public partial class Baza : ContentPage
 		InitializeComponent();
         
     }
-
+     
     private void button_baza_Clicked(object sender, EventArgs e)
     {
-        string connectionString = "server=localhost:3306;user=andrei;password=1234;database=mobile_app";
+        string connectionString = "server=localhost;user=andrei;password=1234;database=mobile_app";
         MySqlConnection connection = new MySqlConnection();
         connection.ConnectionString = connectionString;
         connection.Open();
-        string query = "SELECT * FROM test";
+        string query = "SELECT * FROM activities";
 
 
             MySqlCommand command = new MySqlCommand(query, connection);
             MySqlDataReader reader = command.ExecuteReader();
             while (reader.Read())
             {
-                string valoare = reader.GetString(3);
+                string valoare = reader.GetString(1);
                 BazaDeDate1.Text = valoare;
 
                 // Poți accesa valorile din rândurile rezultatei aici
