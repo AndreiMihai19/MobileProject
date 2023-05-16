@@ -1,5 +1,6 @@
 ﻿using MobileProject.Classes;
 using MobileProject.Pages;
+using System.Xml.Linq;
 
 namespace MobileProject;
 
@@ -11,13 +12,14 @@ public partial class MenuPage : ContentPage
 	{  
 		InitializeComponent();
 
-		username_show.Text = Credentials.username;
+		username_show.Text = User.username;
 
         
 
         Device.StartTimer(TimeSpan.FromSeconds(1), () =>
 		{
             global_door_status.Text = Options.GetDoorStatus();
+            activities_types.Text = Options.GetActivityType();
             currentlocaltime_show.Text = DateTime.Now.ToString("HH:mm:ss");
 			return true;
 		});
@@ -29,7 +31,7 @@ public partial class MenuPage : ContentPage
     [Obsolete]
     private async void Back_Button(object sender, EventArgs e)
 	{
-		if (Credentials.GetUserType() == "user")
+		if (User.GetUserType() == "user")
 		{
             await Navigation.PopAsync();
             await Navigation.PushAsync(new LoginPage());
@@ -58,4 +60,9 @@ public partial class MenuPage : ContentPage
     {
         await Navigation.PushAsync(new Door());
     }
+
+    //private async void activities_button_Clicked(object sender, EventArgs e)
+    //{
+    //    await Navigation.PushAsync(new Activity());
+    //}
 }

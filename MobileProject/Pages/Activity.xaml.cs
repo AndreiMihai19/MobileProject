@@ -1,10 +1,8 @@
-using MobileProject.Classes;
-
 namespace MobileProject.Pages;
 
-public partial class Light : ContentPage
+public partial class Activity : ContentPage
 {
-	public Light()
+	public Activity()
 	{
 		InitializeComponent();
         username_show.Text = User.username;
@@ -14,18 +12,22 @@ public partial class Light : ContentPage
             currentlocaltime_show.Text = DateTime.Now.ToString("HH:mm:ss");
             return true;
         });
-        light_value_test.Text = Options.GetLightValue().ToString();
     }
 
-    private void Slider_ValueChanged(object sender, ValueChangedEventArgs e)
+    private void PersonalizedActivity_Clicked(object sender, EventArgs e)
     {
-        Options.SetLightValue((int)e.NewValue);
-        light_value_test.Text = Options.GetLightValue().ToString();
+
+    }
+
+    private async void DefaultActivity_Clicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new DefaultActivity());
     }
 
     private async void back_button_Clicked(object sender, EventArgs e)
     {
         await Navigation.PopAsync();
         await Navigation.PushAsync(new MenuPage());
+
     }
 }

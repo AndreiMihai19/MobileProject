@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MobileProject.Pages.Door"
-             Title="Door">
+             x:Class="MobileProject.Pages.Activity"
+             Title="Activity">
     <VerticalStackLayout>
 
         <StackLayout  Orientation="Vertical" BackgroundColor="#FFF4B7" WidthRequest="400" HeightRequest="90">
@@ -15,7 +15,7 @@
             TranslationX="15"
             TranslationY="15"
             />
-           
+
             <Label
             Text="Current Local Time"
             TextColor="Black"
@@ -74,7 +74,7 @@
             <StackLayout  Orientation="Vertical" BackgroundColor="#FFF4B7" TranslationY="-17" WidthRequest="400" HeightRequest="700">
 
                 <Label
-            Text="Door Status"
+            Text="Activity"
             FontSize="Large"
             TextColor="black"
             FontAttributes="Bold"
@@ -83,23 +83,10 @@
             TranslationX="50"
             TranslationY="50"
              />
-
-                <Label
-            x:Name="door_status"
-            TextColor="black"
-            Text="Door Status"
-            FontSize="Large"
-            FontAttributes="Bold"
-            HorizontalOptions="Start"
-            VerticalOptions="Start"    
-            TranslationX="50"
-            TranslationY="50"
-             />
-
-
+          
                 <Button
-                x:Name="open_door_button"
-                Text="Open Door"
+                x:Name="PersonalizedActivity"
+                Text="Personalized Activity"
                 FontAttributes="Bold"
                 FontSize="27"
                 TextColor="White"
@@ -108,13 +95,13 @@
                 WidthRequest="330"
                 HeightRequest="120"
                 TranslationY="90"
-                Clicked="open_door_Button"
+                Clicked="PersonalizedActivity_Clicked"
              
                 />
 
                 <Button 
-                x:Name="close_door_button"
-                Text="Close Door"
+                x:Name="DefaultActivity"
+                Text="Default Activity"
                 FontAttributes="Bold"
                 FontSize="27"
                 TextColor="White"
@@ -123,10 +110,10 @@
                 WidthRequest="330"
                 HeightRequest="120"
                 TranslationY="110"
-                Clicked="close_door_Button"
+                Clicked="DefaultActivity_Clicked"
                 />
 
-             
+
                 <Button 
                 x:Name="back_button"
                 Text="Back"
@@ -138,7 +125,7 @@
                 WidthRequest="200"
                 TranslationX="1"
                 TranslationY="170"
-                    Clicked="back_button2"
+                    Clicked="back_button_Clicked"
                     
                 />
 
@@ -147,7 +134,7 @@
             </StackLayout>
 
 
-           
+
 
 
 
