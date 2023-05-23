@@ -2,6 +2,7 @@
 using MySql.Data.MySqlClient;
 using System.Reflection.PortableExecutable;
 using MobileProject.Classes;
+using Mysqlx.Connection;
 
 namespace MobileProject.Pages;
 
@@ -13,13 +14,14 @@ public partial class Baza : ContentPage
         
     }
      
-    private void button_baza_Clicked(object sender, EventArgs e)
+    private async void button_baza_Clicked(object sender, EventArgs e)
     {
-        string connectionString = "server=localhost;user=andrei;password=1234;database=mobile_app";
-        MySqlConnection connection = new MySqlConnection();
-        connection.ConnectionString = connectionString;
+        string connectionString = "server=localhost;port:3306;user=andrei;password=1234;database=mobile_app";
+        MySqlConnection connection = new MySqlConnection(connectionString);
         connection.Open();
-        string query = "SELECT * FROM activities";
+        
+        
+        string query = "SELECT * FROM test";
 
 
             MySqlCommand command = new MySqlCommand(query, connection);
